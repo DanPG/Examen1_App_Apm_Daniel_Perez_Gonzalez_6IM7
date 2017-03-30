@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_actividad2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cecyt9.examen1_app_apm_daniel_perez_gonzalez_6im7.Actividad2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dolares"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/Dolares"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/Pesos"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Inverse"
+        style="@android:style/Widget.Material.EditText"
+        tools:text="Pönga la cantidad a calcular" />
+
+    <Button
+        android:text="Convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:id="@+id/convertir"
+        android:onClick="Convertir"
+        android:layout_below="@+id/Pesos"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+        style="@android:style/Widget.Material.Light.Button.Inset" />
+</RelativeLayout>
